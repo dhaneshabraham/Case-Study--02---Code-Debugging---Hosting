@@ -47,7 +47,7 @@ authorsRouter.post('/add', function (req, res) {
 
 
 
-//router for single author
+//router for single author search
 authorsRouter.get('/:id',function(req,res){
     const id = req.params.id;
     authordata.findOne({ _id: id })
